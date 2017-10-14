@@ -14,6 +14,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
+        tracker.set(kGAIScreenName, value: "FirstViewController")
+        
+        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
+        tracker.send(builder.build() as [NSObject : AnyObject])
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -24,6 +34,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         print("transition1")
+        
         
         
     }

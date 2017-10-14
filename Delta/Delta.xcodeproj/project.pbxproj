@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		832F689E1F92039A0012158E /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F689D1F92039A0012158E /* ViewController3.swift */; };
-		832F68A21F920B720012158E /* GAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F689F1F920B710012158E /* GAConstants.swift */; };
+		832F68A21F920B720012158E /* GAHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F689F1F920B710012158E /* GAHelper.swift */; };
 		832F68A31F920B720012158E /* ConferencePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F68A01F920B710012158E /* ConferencePass.swift */; };
 		83D5C9EC1F91194B00CE6104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5C9EB1F91194B00CE6104 /* AppDelegate.swift */; };
 		83D5C9EE1F91194B00CE6104 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5C9ED1F91194B00CE6104 /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 		1DA436175EBA40283BCAF8E1 /* Pods-Delta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Delta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Delta/Pods-Delta.debug.xcconfig"; sourceTree = "<group>"; };
 		1E5630F5C3F5C3F44D61FA71 /* Pods-Delta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Delta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Delta/Pods-Delta.release.xcconfig"; sourceTree = "<group>"; };
 		832F689D1F92039A0012158E /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
-		832F689F1F920B710012158E /* GAConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAConstants.swift; sourceTree = "<group>"; };
+		832F689F1F920B710012158E /* GAHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAHelper.swift; sourceTree = "<group>"; };
 		832F68A01F920B710012158E /* ConferencePass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferencePass.swift; sourceTree = "<group>"; };
 		832F68A11F920B710012158E /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		83D5C9E81F91194B00CE6104 /* Delta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delta.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +85,7 @@
 				83D5C9EF1F91194B00CE6104 /* Main.storyboard */,
 				832F68A11F920B710012158E /* Bridge.h */,
 				832F68A01F920B710012158E /* ConferencePass.swift */,
-				832F689F1F920B710012158E /* GAConstants.swift */,
+				832F689F1F920B710012158E /* GAHelper.swift */,
 				83D5C9F21F91194B00CE6104 /* Assets.xcassets */,
 				83D5C9F41F91194B00CE6104 /* LaunchScreen.storyboard */,
 				83D5C9F71F91194B00CE6104 /* Info.plist */,
@@ -227,7 +227,7 @@
 			files = (
 				832F68A31F920B720012158E /* ConferencePass.swift in Sources */,
 				83D5C9EE1F91194B00CE6104 /* ViewController.swift in Sources */,
-				832F68A21F920B720012158E /* GAConstants.swift in Sources */,
+				832F68A21F920B720012158E /* GAHelper.swift in Sources */,
 				83D5C9EC1F91194B00CE6104 /* AppDelegate.swift in Sources */,
 				832F689E1F92039A0012158E /* ViewController3.swift in Sources */,
 				83D5C9FE1F91F58300CE6104 /* ViewController2.swift in Sources */,

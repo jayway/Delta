@@ -33,6 +33,15 @@ class ViewController3: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let tracker = GAI.sharedInstance().defaultTracker else { return }
+        tracker.set(kGAIScreenName, value: "FirstViewController")
+        
+        guard let builder = GAIDictionaryBuilder.createScreenView() else { return }
+        tracker.send(builder.build() as [NSObject : AnyObject])
+    }
     
     @IBAction func buttonActions(_ sender: UIButton) {
         
