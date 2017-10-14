@@ -22,14 +22,23 @@ class ViewController2: UIViewController {
         
         priceLabel.text = "14000kr"
         
-        //oneDayButton.setBackgroundColor(color: UIColor.black, forUIControlState: .normal)
-        //oneDayButton.setBackgroundColor(color: UIColor.red, forUIControlState: .selected)
+        oneDayButton.setImage(#imageLiteral(resourceName: "icons8-Unchecked Checkbox-50"), for: .normal)
+        oneDayButton.setImage(#imageLiteral(resourceName: "icons8-Checked Checkbox-50"), for: .selected)
         
-        // Do any additional setup after loading the view.
+        twoDayButton.setImage(#imageLiteral(resourceName: "icons8-Unchecked Checkbox-50"), for: .normal)
+        twoDayButton.setImage(#imageLiteral(resourceName: "icons8-Checked Checkbox-50"), for: .selected)
+        
+        threeDayButton.setImage(#imageLiteral(resourceName: "icons8-Unchecked Checkbox-50"), for: .normal)
+        threeDayButton.setImage(#imageLiteral(resourceName: "icons8-Checked Checkbox-50"), for: .selected)
+        
     }
     
     
     @IBAction func buttonActions(_ sender: UIButton) {
+        
+        oneDayButton.isSelected = false
+        twoDayButton.isSelected = false
+        threeDayButton.isSelected = false
         
         switch sender.tag {
         case 1:
@@ -37,9 +46,13 @@ class ViewController2: UIViewController {
             twoDayButton.isSelected = false
             threeDayButton.isSelected = false
         case 2:
-            twoDayButton.isHighlighted = true
+            oneDayButton.isSelected = false
+            twoDayButton.isSelected = true
+            threeDayButton.isSelected = false
         case 3:
-            threeDayButton.isHighlighted = true
+            oneDayButton.isSelected = false
+            twoDayButton.isSelected = false
+            threeDayButton.isSelected = true
         default:
             break
         }
@@ -70,25 +83,4 @@ class ViewController2: UIViewController {
     }
     */
 
-}
-
-extension UIButton {
-    private func imageWithColor(color: UIColor) -> UIImage {
-        //let rect = CGRect(x: 0.0,y: 0.0,width: 1.0,height: 1.0)
-        let rect = self.bounds
-        UIGraphicsBeginImageContext(rect.size)
-        let context = UIGraphicsGetCurrentContext()
-        
-        context!.setFillColor(color.cgColor)
-        context!.fill(rect)
-        
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return image!
-    }
-    
-    func setBackgroundColor(color: UIColor, forUIControlState state: UIControlState) {
-        self.setBackgroundImage(imageWithColor(color: color), for: state)
-    }
 }
