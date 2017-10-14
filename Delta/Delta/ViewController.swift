@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        print("transition")
+        print("transition1")
         
         
     }
